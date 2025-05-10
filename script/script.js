@@ -1,3 +1,4 @@
+import { plans } from "../script/data.js";
 // Mobile menu toggle
 const mobileMenuButton = document.getElementById("mobileMenuButton");
 const closeMobileMenu = document.getElementById("closeMobileMenu");
@@ -71,3 +72,37 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".animate-fadeInUp").forEach((element) => {
   observer.observe(element);
 });
+
+let plansContainer = "";
+plans.forEach((plans) => {
+  plansContainer += `
+   <div class="package-card animate-fadeInUp ">
+      <div class="package-header ">
+                        <h3 class="text-xl font-bold mb-2">${plans.name}</h3>
+                        <div class="text-3xl font-bold">Ksh. ${plans.price}<span class="text-base font-normal">/mo</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-8">
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>${plans.speed} Mbps Download</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>${plans.speed} Mbps Upload</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>${plans.features.speeds}</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>${plans.features.router}</span>
+                            </li>
+                        </ul>
+                        <a href="${plans.buttonLink}" class="btn-primary w-full text-center block">${plans.buttonText}</a>
+                    </div>
+                </div>
+                `;
+});
+document.querySelector(".js-package-details").innerHTML = plansContainer;
