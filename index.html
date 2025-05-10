@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EazeTech - Premium Fiber Internet Provider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script/tailwind.js"></script>
+    <style type="text/tailwindcss" href="css/tailwind.css"></style>
+</head>
+<body class="font-sans bg-light text-gray-800">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">E</div>
+                <span class="text-xl font-bold text-primary">EazeTech</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="font-medium hover:text-primary transition">Home</a>
+                <a href="#plans" class="font-medium hover:text-primary transition">Plans</a>
+                <a href="#coverage" class="font-medium hover:text-primary transition">Coverage</a>
+                <a href="#features" class="font-medium hover:text-primary transition">Features</a>
+                <a href="#support" class="font-medium hover:text-primary transition">Contact</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#login" class="hidden md:block font-medium hover:text-primary transition">Login</a>
+                <a href="#signup" class="btn-primary">Sign Up</a>
+                <button id="mobileMenuButton" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <button id="closeMobileMenu" class="absolute top-6 right-6 text-gray-600">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <a href="#home" class="text-xl font-medium hover:text-primary transition">Home</a>
+            <a href="#plans" class="text-xl font-medium hover:text-primary transition">Plans</a>
+            <a href="#coverage" class="text-xl font-medium hover:text-primary transition">Coverage</a>
+            <a href="#features" class="text-xl font-medium hover:text-primary transition">Features</a>
+            <a href="#support" class="text-xl font-medium hover:text-primary transition">Contact</a>
+            <!-- <a href="#login" class="text-xl font-medium hover:text-primary transition">Login</a>
+            <a href="#signup" class="btn-primary mt-4">Sign Up</a> -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fadeInUp">Lightning Fast Internet for Your Digital Life</h1>
+                    <p class="text-xl mb-8 opacity-90 animate-fadeInUp animation-delay-100">Experience seamless connectivity with our 99.9% reliable fiber-optic network and next-gen WiFi 6 technology.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp animation-delay-200">
+                        <a href="#plans" class="btn-primary text-center">View Plans</a>
+                        <a href="#coverage" class="btn-secondary text-center">Check Coverage</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-fadeInUp animation-delay-300">
+                    <img src="https://i0.wp.com/medika.life/wp-content/uploads/2021/05/Post-Acute-Care.png?fit=800%2C521&ssl=1" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 animate-fadeInUp">
+                    <div class="text-4xl font-bold text-primary mb-2">99.9%</div>
+                    <div class="text-gray-600">Network Uptime</div>
+                </div>
+                <div class="p-6 animate-fadeInUp animation-delay-100">
+                    <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+                    <div class="text-gray-600">Customer Support</div>
+                </div>
+                <div class="p-6 animate-fadeInUp animation-delay-200">
+                    <div class="text-4xl font-bold text-primary mb-2">300+</div>
+                    <div class="text-gray-600">Happy Customers</div>
+                </div>
+                <div class="p-6 animate-fadeInUp animation-delay-300">
+                    <div class="text-4xl font-bold text-primary mb-2">30Mbps</div>
+                    <div class="text-gray-600">Max Speed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internet Plans -->
+    <section id="plans" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Internet Plans for Every Need</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">From basic browsing to 4K streaming and gaming, we have the perfect plan for you.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Basic Plan -->
+                <div class="package-card animate-fadeInUp">
+                    <div class="package-header">
+                        <h3 class="text-xl font-bold mb-2">Basic</h3>
+                        <div class="text-3xl font-bold">Ksh. 1500<span class="text-base font-normal">/mo</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-8">
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>5 Mbps Download</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>5 Mbps Upload</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Unlimited Data</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Basic WiFi Router</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="btn-primary w-full text-center block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Standard Plan -->
+                <div class="package-card animate-fadeInUp animation-delay-100">
+                    <div class="package-header">
+                        <h3 class="text-xl font-bold mb-2">Standard</h3>
+                        <div class="text-3xl font-bold">Ksh. 2000<span class="text-base font-normal">/mo</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-8">
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>8 Mbps Download</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>8 Mbps Upload</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Unlimited Data</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Advanced Router</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="btn-primary w-full text-center block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan (Featured) -->
+                <div class="package-card transform scale-105 shadow-xl border-2 border-primary animate-fadeInUp animation-delay-200">
+                    <div class="package-header">
+                        <h3 class="text-xl font-bold mb-2">Premium</h3>
+                        <div class="text-3xl font-bold">Ksh. 2500<span class="text-base font-normal">/mo</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-8">
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>12 Mbps Download</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>12 Mbps Upload</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Unlimited Data</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>WiFi 6 Router</span>
+                            </li>
+                           
+                        </ul>
+                        <a href="#signup" class="btn-primary w-full text-center block">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Ultra Plan -->
+                <div class="package-card animate-fadeInUp animation-delay-300">
+                    <div class="package-header">
+                        <h3 class="text-xl font-bold mb-2">Ultra</h3>
+                        <div class="text-3xl font-bold">Ksh. 3000<span class="text-base font-normal">/mo</span></div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="mb-8">
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>20 Mbps Download</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>20 Mbps Upload</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>Unlimited Data</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check text-success"></i>
+                                <span>WiFi 6 Router</span>
+                            </li>
+                        </ul>
+                        <a href="#signup" class="btn-primary w-full text-center block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Map -->
+    <section id="coverage" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6 animate-fadeInUp">Our Growing Network Coverage</h2>
+                    <p class="text-lg text-gray-600 mb-6 animate-fadeInUp animation-delay-100">We're constantly expanding our fiber-optic network to bring you the fastest and most reliable internet service.</p>
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6 animate-fadeInUp animation-delay-200">
+                        <div class="flex items-start">
+                            <div class="text-primary mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Check Availability</h4>
+                                <div class="flex">
+                                    <input type="text" placeholder="Enter your address" class="flex-grow px-4 py-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <button class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-secondary transition">Check</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-fadeInUp animation-delay-300">
+                        <h4 class="font-bold mb-2">Currently Serving:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Gichagi</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Mugacha</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Sir George</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Number Nane</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Kihara</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-fadeInUp animation-delay-400">
+                    <div class="bg-gray-200 rounded-xl overflow-hidden h-96 flex items-center justify-center relative">
+                      <div class="w-full  animate-fadeInUp animation-delay-400">
+                <!-- Embedded Google Map for Gachie, Kiambu -->
+                <div class="rounded-xl overflow-hidden shadow-lg h-96">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.914520058986!2d36.78320331475392!3d-1.2156358358822624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f24a4a7443e27%3A0x4a3d5f5e4ef4e6a9!2sGachie%2C%20Kiambu!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <!-- <p class="text-sm text-gray-500 mt-2">Zoom in to see our exact coverage areas in Gachie</p> -->
+            </div>
+        </div>
+    </div>
+                        <!-- <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-6">
+                                <i class="fas fa-map text-4xl text-gray-400 mb-4"></i>
+                                <h3 class="text-xl font-bold mb-2">Interactive Coverage Map</h3>
+                                <p class="text-gray-600">Enter your address to see if EazeTech is available in your area.</p>
+                            </div>
+                        </div> -->
+                        <!-- This would be replaced with a real map component -->
+                        <!-- <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 flex items-center justify-center">
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg">
+                                View Full Map
+                            </button>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why Choose EazeTech?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We're not just another internet provider - we're your connectivity partner.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md animate-fadeInUp">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fiber-Optic Technology</h3>
+                    <p class="text-gray-600">Our 100% fiber-optic network delivers symmetrical speeds for seamless uploading and downloading.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md animate-fadeInUp animation-delay-100">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Whole-Home WiFi 6</h3>
+                    <p class="text-gray-600">Ensure coverage in every corner of your home with multiple devices.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md animate-fadeInUp animation-delay-200">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Alarms Systems</h3>
+                    <p class="text-gray-600">We also specialize in installation of alarm systems to secure your home inclusive of biometric access control.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md animate-fadeInUp animation-delay-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">Customer service support is available anytime to help with any issues or questions.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md animate-fadeInUp animation-delay-400">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CCTV installation</h3>
+                    <p class="text-gray-600">We install cctvs integrate them with your network making it easy for you to monitor your premises anytime.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl animate-fadeInUp">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Rose </h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Switching to EazeTech was the best decision I made for my home office. The speeds are consistently fast and reliable."</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl animate-fadeInUp animation-delay-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael</h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa fa-sta "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quaerat libero excepturi dicta.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl animate-fadeInUp animation-delay-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Diana Family</h4>
+                            <div class="flex text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quaerat libero excepturi dicta!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 animate-fadeInUp">Ready to Experience Better Internet?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto animate-fadeInUp animation-delay-100">Join our satisfied customers enjoying lightning-fast, reliable internet service.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp animation-delay-200">
+                <a href="#plans" class="btn-primary bg-white text-primary hover:bg-gray-100">View Plans</a>
+                <a href="tel:+254759031615" class="btn-secondary border-white text-black hover:bg-white hover:text-primary">
+                    <i class="fas fa-phone mr-2"></i> Call Now: 0759031615
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 EazeTech. All rights reserved. | <a href="#" class="hover:text-white transition">Privacy Policy</a> | <a href="#" class="hover:text-white transition">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
