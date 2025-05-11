@@ -43,19 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add real-time validation
   form.querySelectorAll("input, select, textarea").forEach((input) => {
-    input.addEventListener("input", function () {
+    input.addEventListener("input", () => {
       validateField(this);
     });
 
     // Also validate when leaving the field (blur)
-    input.addEventListener("blur", function () {
+    input.addEventListener("blur", () => {
       validateField(this);
     });
   });
 
   // Phone number formatting
   const phoneInput = document.getElementById("phone");
-  phoneInput.addEventListener("input", function () {
+  phoneInput.addEventListener("input", () => {
     // Remove any non-digit characters
     this.value = this.value.replace(/\D/g, "");
 
